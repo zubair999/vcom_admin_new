@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components";
-import { MediaUpload } from "../media-uploader";
+import { MediaUpload } from "@/components/media-uploader";
 
 export function AddBrandComponent() {
   return (
@@ -43,14 +43,7 @@ export function AddBrandComponent() {
                 />
               </div>
               <div>
-                <MediaUpload
-                  name={""}
-                  onChange={() => {}}
-                  placeholder="Image"
-                  defaultValue=""
-                  maxFiles={1}
-                  maxSize={3072}
-                />
+                <MediaUpload />
               </div>
             </div>
           </form>

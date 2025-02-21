@@ -1,11 +1,10 @@
-"use client";
 import { DefaultLayout } from "@/components/layout/default-layout";
 import { MultipleCard } from "../../components/dashboard/multiple-card";
 import { Transaction } from "../../components/dashboard/transaction";
 import { RecentSales } from "../../components/dashboard/recent-sales";
 import { Chart } from "../../components/dashboard/chart";
 
-export const Dashboard: React.FC = () => {
+export const DashboardComponent: React.FC = () => {
   return (
     <DefaultLayout>
       <div>
@@ -20,6 +19,7 @@ export const Dashboard: React.FC = () => {
           </main>
         </div>
       </div>
+      {/* <div>Dashboard</div>? */}
     </DefaultLayout>
   );
 };

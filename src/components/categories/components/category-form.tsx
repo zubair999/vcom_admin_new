@@ -9,6 +9,7 @@ import {
   ErrorMessage,
 } from "@/components";
 import { useCategoryForm } from "./useCategoryForm";
+// import { MediaUpload } from "@/components/media-uploader";
 import { MediaUpload } from "@/components/media-uploader";
 
 export const CategoryForm: React.FC = () => {
@@ -121,16 +122,7 @@ export const CategoryForm: React.FC = () => {
         <Controller
           control={control}
           name="image"
-          render={({ field: { onChange, value = "" } }) => (
-            <MediaUpload
-              name="image"
-              onChange={onChange}
-              placeholder="Image"
-              defaultValue={value}
-              maxFiles={1}
-              maxSize={3072}
-            />
-          )}
+          render={() => <MediaUpload />}
         />
       </div>
     </>

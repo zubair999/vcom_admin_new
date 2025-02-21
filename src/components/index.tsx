@@ -17,7 +17,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { MediaPreview } from "@/components/media-uploader/media-previews";
 import { SortableListComponent } from "@/components/sortable-list/";
 import { SingleSearchableSelectBox } from "@/components/ui/single-searchable-selectbox";
 import {
@@ -51,7 +50,6 @@ export {
   SelectItem,
   SelectTrigger,
   SelectValue,
-  MediaPreview,
   SortableListComponent,
   DropdownMenu,
   DropdownMenuContent,

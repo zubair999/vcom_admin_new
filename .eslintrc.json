@@ -1,3 +1,26 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "import/named": "warn",
+    "import/first": "warn", // Enforces imports at the top
+    "import/newline-after-import": "error", // Newline after import statements
+    "import/no-duplicates": "error", // Prevent duplicate imports
+    "@typescript-eslint/explicit-function-return-type": "off", // Optional: require return types on functions,
+    "react-hooks/exhaustive-deps": "off",
+    "no-useless-rename": [
+      "error",
+      {
+        "ignoreDestructuring": false,
+        "ignoreImport": false,
+        "ignoreExport": false
+      }
+    ]
+  }
 }

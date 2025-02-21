@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components";
-import { MediaUpload } from "../media-uploader";
+import { MediaUpload } from "@/components/media-uploader";
 
 export function EditBrandComponent() {
   return (
@@ -40,14 +40,7 @@ export function EditBrandComponent() {
                 <Textarea id="name" placeholder="Enter brand description" />
               </div>
               <div>
-                <MediaUpload
-                  name={""}
-                  onChange={() => {}}
-                  placeholder="Image"
-                  defaultValue=""
-                  maxFiles={1}
-                  maxSize={3072}
-                />
+                <MediaUpload />
               </div>
             </div>
           </form>

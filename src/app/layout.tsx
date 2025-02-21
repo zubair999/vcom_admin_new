@@ -5,7 +5,6 @@ import { ManagedUIContext } from "@/contexts/ui-contenxt";
 
 import "./globals.css";
 import "@mantine/dropzone/styles.css";
-import "@mantine/dropzone/styles.css";
 
 export const metadata: Metadata = {
   title: "Vcomm",
