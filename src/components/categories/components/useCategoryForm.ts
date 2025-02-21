@@ -10,7 +10,6 @@ export const useCategoryForm = () => {
       const { formState: { errors } } = methods;
 
 
-      console.log(errors);
 
     const onSubmit: SubmitHandler<Category> = (data) => {
         console.log("Submitted");
